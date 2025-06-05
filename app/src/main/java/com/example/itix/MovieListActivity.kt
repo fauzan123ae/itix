@@ -74,14 +74,14 @@ class   MovieListActivity : AppCompatActivity() {
 
 
     private fun dummyMovies(): List<Movie> = listOf(
-        Movie(title = "Lilo & Stitch", imageRes = R.drawable.lilostitch, category = "Now Playing", genre = "Action / Comedy", duration = "120 min"),
-        Movie(title = "How to Train Your Dragon", imageRes = R.drawable.movie_httyd, category = "Now Playing", genre = "Action / Comedy", duration = "120 min"),
-        Movie(title = "F1: The Movie", imageRes = R.drawable.movie_f1, category = "Now Playing", genre = "Action / Comedy", duration = "120 min"),
-        Movie(title = "Jurassic World: Rebirth", imageRes = R.drawable.movie_jw, category = "Top Movie", genre = "Action / Comedy", duration = "120 min"),
-        Movie(title = "Superman", imageRes = R.drawable.movie_supr, category = "Top Movie", genre = "Action / Comedy", duration = "120 min"),
-        Movie(title = "Karate Kid Legends", imageRes = R.drawable.movie_kk, category = "Top Movie", genre = "Action / Comedy", duration = "120 min"),
-        Movie(title = "WARFARE", imageRes = R.drawable.movie_war, category = "Coming Soon", genre = "Action / Comedy", duration = "120 min"),
-        Movie(title = "Blood Brothers", imageRes = R.drawable.movie_brother, category = "Coming Soon", genre = "Action / Comedy", duration = "120 min"),
-        Movie(title = "Fear Below", imageRes = R.drawable.movie_fear, category = "Coming Soon", genre = "Action / Comedy", duration = "120 min")
+        Movie(title = "Lilo & Stitch", imageRes = R.drawable.lilostitch, category = "Now Playing", genre = "Animation / Sci-Fi / Comedy-Drama", duration = "85 min"),
+        Movie(title = "How to Train Your Dragon", imageRes = R.drawable.movie_httyd, category = "Now Playing", genre = "Animation / Fantasy / Adventure", duration = "98 min"),
+        Movie(title = "F1: The Movie", imageRes = R.drawable.movie_f1, category = "Now Playing", genre = "Sports / Action / Drama", duration = "120 min"),
+        Movie(title = "Jurassic World: Rebirth", imageRes = R.drawable.movie_jw, category = "Top Movie", genre = "Sci-Fi / Action / Adventure", duration = "120 min"),
+        Movie(title = "Superman", imageRes = R.drawable.movie_supr, category = "Top Movie", genre = "Superhero / Action / Sci-Fi", duration = "120 min"),
+        Movie(title = "Karate Kid Legends", imageRes = R.drawable.movie_kk, category = "Top Movie", genre = "Martial Arts / Drama / Family", duration = "120 min"),
+        Movie(title = "WARFARE", imageRes = R.drawable.movie_war, category = "Coming Soon", genre = "War / Action / Drama", duration = "120 min"),
+        Movie(title = "Blood Brothers", imageRes = R.drawable.movie_brother, category = "Coming Soon", genre = "Action / Thriller", duration = "120 min"),
+        Movie(title = "Fear Below", imageRes = R.drawable.movie_fear, category = "Coming Soon", genre = "Horror / Thriller / Adventure", duration = "85 min")
     )
 }
