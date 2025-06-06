@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.jvm.java
 import android.os.Handler
 
 class SplashScreen : AppCompatActivity() {
@@ -28,7 +27,7 @@ class SplashScreen : AppCompatActivity() {
             // creating a new intent
             val i = Intent(
                 this@SplashScreen,
-                HomeActivity::class.java
+                LoginActivity::class.java
             )
             // on below line we are
             // starting a new activity.
