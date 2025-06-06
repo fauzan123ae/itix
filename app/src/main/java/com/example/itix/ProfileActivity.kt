@@ -1,23 +1,35 @@
 package com.example.itix
 
 import android.os.Bundle
+import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.itix.databinding.ActivityProfileBinding
 
 class ProfileActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityProfileBinding
+    private lateinit var tvUsername: TextView
+    private lateinit var tvEmail: TextView
+    private lateinit var btnBack: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityProfileBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_profile)
 
-        binding.tvUsername.text = "zanzan"
-        binding.tvEmail.text = "zanzan@gmail.com"
+        // Initialize views
+        tvUsername = findViewById(R.id.tvUsername)
+        tvEmail = findViewById(R.id.tvEmail)
+        btnBack = findViewById(R.id.btnBack)
 
-        binding.btnBack.setOnClickListener {
-            onBackPressedDispatcher.onBackPressed()
+        // Get user data from Intent
+        val username = intent.getStringExtra("username") ?: ""
+        val email = intent.getStringExtra("email") ?: ""
+
+        // Set user data to TextViews
+        tvUsername.text = username
+        tvEmail.text = email
+
+        // Set up back button
+        btnBack.setOnClickListener {
+            onBackPressed()
         }
     }
 }
